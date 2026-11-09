@@ -7,7 +7,7 @@ import { NetworkRelayModule } from './net/NetworkRelayModule.js';
 import { serializeSession, type ClientMessage, type ServerMessage } from './protocol.js';
 
 const PORT = Number(process.env.PORT ?? 8080);
-const TICK_INTERVAL_MS = 100;
+const TICK_INTERVAL_MS = 50;
 const IDLE_SWEEP_INTERVAL_MS = 30_000;
 
 const lobby = new SessionLobbyModule();
